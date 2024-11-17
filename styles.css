@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1dvw;
+  font-family: "Roboto Mono", monospace;
+  color: #191919;
+}
+@media only screen and (max-width: 768px) {
+  *{
+    font-size: 0.8dvw;
+  }
+  }
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-padding-top: 10px;
+}
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+::-webkit-scrollbar-button {
+  width: 3px;
+  height: 3px;
+}
+
+body {
+  padding: 2% 6% 1% 6%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main{
+  padding: 5dvh 0;
+}
+.header-logo{
+  width: 10vw;
+  background-color:black
+}
+.web-logo {
+  width: 6dvw;
+  margin-left: 10vw;
+}
+.header-menu {
+  border: 1px solid #191919;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40dvw;
+  padding: 5px 0;
+}
+
+.items-link {
+  text-decoration: none;
+  position: relative; 
+}
+
+.menu-items {
+  width: 2dvw;
+  height: 2dvw;
+  transition: 0.4s ease-in;
+  margin: 0 3.5dvw;
+  transition: 0.3s ease-in;
+  padding: 2px;
+  color: black;
+}
+.text {
+  opacity: 0;
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 6dvw;
+  height: 2dvw;
+  font-size: 0.8dvw;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  transition: 0.3s ease-in;
+}
+.items-link:hover .text {
+opacity: 1;
+scale: 1.1;
+background-color: #de6161;
+color:white;
+transition: 0.3s ease-in;
+}
+/*banner*/
+.banner-main {
+  overflow: hidden;
+}
+.banner-image {
+  width: 100%;
+  margin-top: 2dvh;
+  border-radius: 20px;
+  transition: 0.5s ease-in;
+  cursor: pointer;
+}
+.banner-image:hover {
+  scale: 1.2;
+  transition: 0.5s ease-out;
+}
+main h1 {
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  width: 100%;
+  height: 15dvw;
+  margin: 5dvh 0;
+
+}
+.text-container{
+  width: 100%;
+  height: 15dvw;
+  background-color: #de6161;
+  border-radius: 20px;
+  display: grid;
+}
+
+.information {
+  scale: 0.8;
+  transition: 0.4s ease-in;
+  cursor:pointer;
+}
+.information:hover {
+  scale: 1;
+  transition: 0.4s ease-in;
+  color: white;
+}
+
+.About-us:hover {
+  scale: 1.2;
+  transition: 0.4s ease-out;
+
+}
+.skill:hover {
+  scale: 1.2;
+  transition: 0.4s ease-out;
+}
+.About-us,
+.skill {
+  width: 30dvw;
+  height: 15dvw;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+  z-index: 999;
+}
+.box-title{
+  padding-top:10px
+}
+.skill-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.skill-logo {
+  width: 3dvw;
+  height: 3dvw;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.skill-logo:hover {
+  scale: 1.4;
+  transition: 0.3s ease-out;
+}
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 35px;
+}
+.content-image {
+  width: 20dvw;
+  height: 13dvw;
+  transition: 0.4s ease-in;
+  border-radius:15px
+}
+.content-image:hover {
+  scale: 1.25;
+  transition: 0.4s ease-in-out;
+}
+.SP {
+  text-decoration: none;
+}
+.main-btn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.buy-btn {
+  padding: 1dvw 10dvw;
+  color: white;
+  background-color: #de6161;
+  border-radius: 25px;
+  border: transparent;
+  margin: 4dvh 0;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+.buy-btn:hover {
+  background-color: rgb(55, 224, 91);
+  transition: 0.4s ease-out;
+}
+
+footer {
+  background-color: #beb7a4;
+  border-radius:20px;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-item {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-item img {
+  width: 6dvw;
+  height: auto;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.content {
+  padding-top: 4dvh;
+}
+.hidden {
+  scale: 0;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.show {
+  scale: 1;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
