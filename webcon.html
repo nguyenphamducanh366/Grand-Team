@@ -1,206 +1,293 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="vi">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Các Dịch vụ làm Web uy tín</title>
-    <meta name="description" content="Grand Team - Chuyên thiết kế website chuyên nghiệp tại Hà Nội. Cam kết mang đến giải pháp trực tuyến hiệu quả và độc đáo.">
-    <meta name="keywords" content="
-    dịch vụ làm website,	
-    làm website chuyên nghiệp,	
-    cách làm website miễn phí,	
-    portfolio là gì,
-    Giao diện portfolio,
-    làm portfolio,
-    thiết kế web bán hàng,
-    cách lập trang web bán hàng	,
-    làm website trọn gói,	">
-    <meta name="description" content="Chúng tôi là một nhóm chuyên về việc phát triển và làm website chuyên nghiệp tại Hà Nội. Với sự đam mê và kiến thức sâu rộng về công nghệ web, chúng tôi cam kết mang đến cho khách hàng những giải pháp trực tuyến hiệu quả và độc đáo. Chúng tôi đồng thời cũng có những video hướng dẫn làm cách làm website miễn phí và có những câu trả lời cho những câu hỏi thường gặp như: Portfolio là gì?">
-    
-    <link rel="stylesheet" href="webcon.css" class="css">
-    <meta property="og:title" content="Grand Team - Chuyên Thiết Kế Website Chất Lượng Cao">
-    <meta property="og:description" content="Grand Team - Chuyên thiết kế website chuyên nghiệp tại Hà Nội. Cam kết mang đến giải pháp trực tuyến hiệu quả và độc đáo.">
-    <meta property="og:image" content="https://www.example.com/image.jpg">
-    <meta property="og:url" content="https://www.example.com">
-    <meta property="og:type" content="website">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SYRCFLMXJZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SYRCFLMXJZ');
-</script>
+    <title>Dịch Vụ Thiết Kế Website - Grand Team</title>
+         <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <style>
+       
+    </style>
 </head>
-  <body>
-
+<body>
+    <!-- Header -->
     <header>
-      <div class="header-logo hidden">
-          <a href="index.html"><img class="web-logo"src="./img/logo.webp" alt=""></a>
-      </div>
-      <nav class="header-menu hidden">
-        <a class="items-link" href="index.html">
-            <ion-icon class="menu-items" name="home-outline"></ion-icon>
-            <span class="text">Trang chủ</span>
-        </a>
-        <a class="items-link" href="webcon.html">
-            <ion-icon class="menu-items" name="browsers-outline"></ion-icon>
-            <span class="text">Sản Phẩm</span>
-        </a>
-        <a class="items-link" href="#sp">
-            <ion-icon class="menu-items" name="information-circle-outline"></ion-icon>
-            <span class="text">Thông tin sản phẩm</span>
-        </a>
-        <a class="items-link" href="mkt.html">
-            <ion-icon class="menu-items" name="mail-outline"></ion-icon>
-            <span class="text">Liên Hệ</span>
-        </a>
-    </nav>
-        
+        <div class="container header-container">
+             <a href="index.html" class="logo">
+                <img src="./img/logo.webp" alt="Grand Team Logo">
+            </a>
+            
+            <button class="nav-toggle">
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <ion-icon name="home-outline"></ion-icon> Trang chủ
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="webcon.html" class="nav-link">
+                        <ion-icon name="browsers-outline"></ion-icon> Sản phẩm
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#faq" class="nav-link">
+                        <ion-icon name="information-circle-outline"></ion-icon> Câu hỏi thường gặp
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#section-contact" class="nav-link">
+                        <ion-icon name="mail-outline"></ion-icon> Liên hệ
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
-    <main>
-      <center>
-        <h1 id="sp"class="content hidden">Bảng giá sản phẩm</h1>
-      </center>
-      <div class="product">
-        <div class="row-1 hidden">
-          <div class="product-box">
-            <div class="box-image-container">
-              <img src="img/landing page.webp" alt=" làm website chuyên nghiệp" class="box-image" />
-            </div>
-            <div class="prices">
-              <center><h1 class="title">Landing Page</h1></center>
-              <p class="desc-item">Phù hợp cho di động</p>
-              <p class="desc-item">Thiết kế tùy chỉnh phù hợp</p>
-              <p class="desc-item">Thời gian tải nhanh</p>
-              <p class="desc-item">Tối ưu hóa SEO</p>
-              <p class="desc-item">Khả năng thử nghiệm A/B</p>
-              
-            </div>
-            <center><button class="datmua">300.000VNĐ</button></center>
-          </div>
-          <div class="product-box">
-            <div class="box-image-container">
-              <img src="img/portfolio.webp" alt="Giao diện portfolio" class="box-image" />
-            </div>
 
-            <div class="prices">
-              <center><h1 class="title">Portfolio</h1></center>
-              <p class="desc-item">Giao diện Portfolio Hiện đại</p>
-              <p class="desc-item">Có những phương pháp làm Portfolio tối uư</p>
-              <p class="desc-item">Hiển thị mượt mà</p>
-              <p class="desc-item">Tiện ích Liên lạc</p>
-              <p class="desc-item">Tích hợp Phương tiện Truyền thông</p>
-            </div>
-            <center><button class="datmua">600.000VNĐ</button></center>
-          </div>
-          
-          <div class="product-box">
-            <div class="box-image-container">
-              <img
-                src="img/Ecommerce-là-gì-và-loi-ich 1.webp"
-                alt="thiết kế web bán hàng"
-                class="box-image"
-              />
-            </div>
+    <!-- Services Section -->
+    <section class="services-section" id="sp">
+        <div class="container">
+            <div class="services-grid">
+                <!-- Landing Page Service -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="./img/landing page.webp" alt="Landing Page" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Landing Page</h3>
+                        <div class="service-price">300.000 VNĐ</div>
+                        <ul class="service-features">
+                            <li>Phù hợp cho di động</li>
+                            <li>Thiết kế tùy chỉnh</li>
+                            <li>Thời gian tải nhanh</li>
+                            <li>Tối ưu hóa SEO</li>
+                            <li>Thử nghiệm A/B</li>
+                        </ul>
+                        <a href="index.html#section-contact" class="btn btn-primary">Đặt Ngay</a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Service -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="./img/portfolio.webp" alt="Portfolio Design" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Portfolio</h3>
+                        <div class="service-price">600.000 VNĐ</div>
+                        <ul class="service-features">
+                            <li>Giao diện hiện đại</li>
+                            <li>Phương pháp tối ưu</li>
+                            <li>Hiển thị mượt mà</li>
+                            <li>Tiện ích liên lạc</li>
+                            <li>Tích hợp truyền thông</li>
+                        </ul>
+                        <a href="index.html#section-contact" class="btn btn-primary">Đặt Ngay</a>
+                    </div>
+                </div>
+                
+                <!-- Ecommerce Service -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="./img/Ecommerce-là-gì-và-loi-ich 1.webp" alt="Ecommerce Website" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Web Bán Hàng</h3>
+                        <div class="service-price">1.400.000 VNĐ</div>
+                        <ul class="service-features">
+                            <li>Gian hàng trực tuyến</li>
+                            <li>Thanh toán an toàn</li>
+                            <li>Hoạt động đa thiết bị</li>
+                            <li>Giao diện thân thiện</li>
+                            <li>Thiết kế độc đáo</li>
+                        </ul>
+                        <a href="index.html#section-contact" class="btn btn-primary">Đặt Ngay</a>
+                    </div>
+                </div>
+                
+                <!-- Custom Web Service -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="./img/web-tuy chinh.webp" alt="Custom Website" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Web Tùy Chỉnh</h3>
+                        <div class="service-price">Liên Hệ</div>
+                        <ul class="service-features">
+                            <li>Thiết kế theo yêu cầu</li>
+                            <li>Phù hợp di động</li>
+                            <li>Giao diện hiện đại</li>
+                            <li>Tối ưu hóa SEO</li>
+                            <li>Giá cả hợp lý</li>
+                        </ul>
+                        <a href="index.html#section-contact" class="btn btn-primary">Liên Hệ Ngay</a>
+                    </div>
+                </div>
+                
+                <!-- Comic Web Service -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="./img/webdoctruyen.webp" alt="Comic Website" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Web Truyện Tranh</h3>
+                        <div class="service-price">4.800.000 VNĐ</div>
+                        <ul class="service-features">
+                            <li>Trang thể loại riêng</li>
+                            <li>Tìm kiếm nhanh chóng</li>
+                            <li>Truyện hiển thị tức thì</li>
+                            <li>Tiện ích cho người dùng</li>
+                            <li>Kết nối ổn định</li>
+                        </ul>
+                        <a href="index.html#section-contact" class="btn btn-primary">Đặt Ngay</a>
+                    </div>
+                </div>
 
-            <div class="prices">
-              <center><h1 class="title">Ecommerce</h1></center>
-              <p class="desc-item">Gian hàng Trực tuyến tiện lợi</p>
-              <p class="desc-item">Thanh toán An toàn,nhanh nhẹn</p>
-              <p class="desc-item">Hoạt động tốt</p>
-              <p class="desc-item">Giao diện tiện lợi</p>
-              <p class="desc-item">Có những thiết kế web bán hàng độc đáo</p>
-              
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="./img/maintain.webp" alt="Website Maintenance" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Bảo Trì Website</h3>
+                        <div class="service-price">Liên Hệ</div>
+                        <ul class="service-features">
+                            <li>Kiểm tra định kỳ</li>
+                            <li>Sao lưu hệ thống</li>
+                            <li>Cập nhật phần mềm</li>
+                            <li>Hỗ trợ kỹ thuật 24/7</li>
+                            <li>Giám sát hiệu suất</li>
+                        </ul>
+                        <a href="index.html#section-contact" class="btn btn-primary">Liên Hệ Ngay</a>
+                    </div>
+                </div>
             </div>
-            <center><button class="datmua">1.400.000VNĐ</button></center>
-          </div>
         </div>
-        <div class="row-2 hidden">
-          <div class="product-box">
-            <div class="box-image-container">
-              <img src="img/web-tuy chinh.webp" alt="làm website trọn gói" class="box-image" />
-            </div>
-            <div class="prices">
-              <center><h1 class="title">Web Tùy Chỉnh</h1></center>
-              <p class="desc-item">Phù hợp cho di động</p>
-              <p class="desc-item">Làm website trọn gói giá rẻ</p>
-              <p class="desc-item">Giao diện đẹp,hiện đại</p>
-              <p class="desc-item">Tối ưu hóa SEO</p>
-              <p class="desc-item">Giá cả phải chăng</p>
-              
-            </div>
-            <center><button class="datmua">Liên Hệ</button></center>
-          </div>
-          <div class="product-box">
-            <div class="box-image-container">
-              <img src="img/webdoctruyen.webp" alt="" class="box-image" />
-            </div>
+    </section>
 
-            <div class="prices">
-              <center><h1 class="title">Web truyện tranh</h1></center>
-              <p class="desc-item">Từng trang con cho các thể loại</p>
-              <p class="desc-item">Tìm kiếm nhanh chóng</p>
-              <p class="desc-item">Truyện hiện nhanh chóng</p>
-              <p class="desc-item">Nhiều tiện lợi cho nguời dùng</p>
-              <p class="desc-item">Kết nối ổn định</p>
-              
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2 class="section-title">Câu Hỏi Thường Gặp</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Portfolio là gì?</span>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Portfolio là một bộ sưu tập các tác phẩm, dự án hoặc thành tích cá nhân được trình bày để giới thiệu kỹ năng, kinh nghiệm và năng lực của bạn. Trong lĩnh vực thiết kế web, portfolio thường là một website giới thiệu các dự án đã thực hiện.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Thời gian hoàn thành một website là bao lâu?</span>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Thời gian hoàn thành website phụ thuộc vào loại website và độ phức tạp của dự án. Landing Page thường hoàn thành trong 3-5 ngày, Portfolio trong 7-10 ngày, Website bán hàng trong 2-3 tuần. Web tùy chỉnh và web truyện tranh cần thời gian dài hơn từ 3-6 tuần.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Tôi có thể tự cập nhật nội dung website không?</span>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Có, tất cả các website chúng tôi thiết kế đều có hệ thống quản trị (CMS) cho phép bạn dễ dàng cập nhật nội dung, hình ảnh, sản phẩm mà không cần kiến thức lập trình. Chúng tôi sẽ hướng dẫn bạn cách sử dụng hệ thống này.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Website có hỗ trợ hiển thị trên điện thoại không?</span>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tất cả các website chúng tôi thiết kế đều áp dụng phương pháp Responsive Web Design, giúp website tự động điều chỉnh giao diện để hiển thị tối ưu trên mọi thiết bị từ máy tính để bàn, máy tính bảng đến điện thoại di động.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Quy trình làm việc như thế nào?</span>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+                    <div class="faq-answer">
+                        <ul class="working-steps">Quy trình làm việc của chúng tôi gồm 5 bước: 
+                          <li> Tiếp nhận yêu cầu và phân tích, </li>
+                          <li> Thiết kế giao diện, </li>
+                          <li> Phát triển website, </li>
+                          <li> Kiểm thử và hoàn thiện, </li>
+                          <li> Bàn giao và hướng dẫn sử dụng. </li>
+                          Chúng tôi luôn cập nhật tiến độ cho khách hàng trong suốt quá trình thực hiện.
+                          </ul>
+                    </div>
+                </div>
             </div>
-            <center><button class="datmua">4.800.000VNĐ</button></center>
-          </div>
-          <div class="product-box">
-            <div class="box-image-container">
-              <img src="img/maintain.webp" alt="" class="box-image" />
-            </div>
-
-            <div class="prices">
-              <center><h1 class="title">Bảo Trì Website</h1></center>
-              <p class="desc-item">Kiểm tra Định kỳ</p>
-              <p class="desc-item">Sao lưu Hệ thống thường xuyên</p>
-              <p class="desc-item">Cập nhật Phần mềm hàng tháng</p>
-              <p class="desc-item">Hỗ trợ Kỹ thuật 24/7</p>
-              <p class="desc-item">Giám sát Hiệu suất</p>
-              
-            </div>
-            <center><button class="datmua">Liên Hệ</button></center>
-          </div>
         </div>
-        <footer>
-          <div class="footer-container hidden">
-              <div class="footer-item">
-                  <a href="#"><img class="web-logo" src="./img/logo.webp" alt="Grand Team Logo"></a>
-              </div>
-              <div class="footer-item">
-                  <p>&copy; Copyright by Team 6 FPL MKT</p>
-              </div>
-              <div class="footer-item">
-                  <b><h4>Email: window1996vn@gmail.com</h4></b>
-                  <b><h5>0982345261</h5></b>
-              </div>
-          </div>
-        </footer>
-      </div>
-    </main>
+    </section>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Sẵn sàng nâng cấp trực tuyến của bạn?</h2>
+            <p class="cta-text">Liên hệ với chúng tôi ngay hôm nay để nhận tư vấn miễn phí và báo giá chi tiết cho dự án website của bạn.</p>
+            <a href="index.html#section-contact" class="cta-button">Liên Hệ Ngay</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+   <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2025 Grand Team. All right reserve.</p>
+            </div>
+        </div>
+    </footer>
+
     <script>
-      const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      } 
-    });
-  });
-  const hiddenElement = document.querySelectorAll(".hidden");
-  hiddenElement.forEach((el) => observer.observe(el));
+        // Mobile Navigation Toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a nav link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+        
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
   
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
     </script>
-  </body>
+</body>
 </html>

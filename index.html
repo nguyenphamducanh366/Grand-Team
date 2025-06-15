@@ -1,145 +1,381 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grand Team - Chuyên Thiết Kế Website Chất Lượng Cao</title>
-    <meta name="description" content="Grand Team - Chuyên thiết kế website chuyên nghiệp tại Hà Nội. Cam kết mang đến giải pháp trực tuyến hiệu quả và độc đáo.">
-    <meta name="keywords" content="
-    dịch vụ làm website,	
-    làm website chuyên nghiệp,	
-    cách làm website miễn phí,	
-    portfolio là gì,
-    Giao diện portfolio,
-    làm portfolio,
-    thiết kế web bán hàng,
-    cách lập trang web bán hàng	,
-    làm website trọn gói,	">
-    <meta name="description" content="Chúng tôi là một nhóm chuyên về việc phát triển và làm website chuyên nghiệp tại Hà Nội. Với sự đam mê và kiến thức sâu rộng về công nghệ web, chúng tôi cam kết mang đến cho khách hàng những giải pháp trực tuyến hiệu quả và độc đáo. Chúng tôi đồng thời cũng có những video hướng dẫn làm cách làm website miễn phí và có những câu trả lời cho những câu hỏi thường gặp như: Portfolio là gì?">
-    
-    <link rel="stylesheet" href="styles.css" class="css">
-    <meta property="og:title" content="Grand Team - Chuyên Thiết Kế Website Chất Lượng Cao">
-    <meta property="og:description" content="Grand Team - Chuyên thiết kế website chuyên nghiệp tại Hà Nội. Cam kết mang đến giải pháp trực tuyến hiệu quả và độc đáo.">
-    <meta property="og:image" content="https://www.example.com/image.jpg">
-    <meta property="og:url" content="https://www.example.com">
-    <meta property="og:type" content="website">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SYRCFLMXJZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SYRCFLMXJZ');
-</script>
+    <title>Grand Team - Thiết Kế Website Chuyên Nghiệp</title>
+     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
-
 <body>
-
+    <!-- Header -->
     <header>
-        <div class="header-logo hidden">
-            <a href="index.html"><img class="web-logo" src="./img/logo.webp" alt="Grand Team Logo"></a>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="./img/logo.webp" alt="Grand Team Logo">
+            </a>
+            
+            <button class="nav-toggle">
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#homepage" class="nav-link">
+                        <ion-icon name="home-outline"></ion-icon> Trang chủ
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#section-title" class="nav-link">
+                        <ion-icon name="browsers-outline"></ion-icon> Sản phẩm
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#section-about-us" class="nav-link">
+                        <ion-icon name="help-circle-outline"></ion-icon> Về Chúng Tôi
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#section-contact" class="nav-link">
+                        <ion-icon name="mail-outline"></ion-icon> Liên hệ
+                    </a>
+                </li>
+            </ul>
         </div>
-        <nav class="header-menu hidden">
-            <a class="items-link" href="#">
-                <ion-icon class="menu-items" name="home-outline"></ion-icon>
-                <span class="text">Trang chủ</span>
-            </a>
-            <a class="items-link" href="webcon.html">
-                <ion-icon class="menu-items" name="browsers-outline"></ion-icon>
-                <span class="text">Mặt hàng</span>
-            </a>
-            <a class="items-link" href="#about-us">
-                <ion-icon class="menu-items" name="information-circle-outline"></ion-icon>
-                <span class="text">Về Chúng tôi</span>
-            </a>
-            <a class="items-link" href="mkt.html">
-                <ion-icon class="menu-items" name="mail-outline"></ion-icon>
-                <span class="text">Liên Hệ</span>
-            </a>
-        </nav>
     </header>
-    <div class="banner-main hidden">
-        <img class="banner-image" src="./img/Banner (1).webp" alt="Banner Image">
-    </div>
 
-    <main>
-        <h1>Về Chúng Tôi</h1>
-        <div class="box hidden">
-            <img id="about-us" class="About-us hidden" src="./img/depositphotos_104648666-stock-photo-group-of-people-brainstorming-on 1.webp" alt="About Us Image">
-            <div class="text-container">
-               <h1 class="box-title">Về chúng tôi</h1>
-               <p class="information">Chúng tôi là một nhóm chuyên về việc phát triển và làm website chuyên nghiệp tại Hà Nội. Với sự đam mê và kiến thức sâu rộng về công nghệ web, chúng tôi cam kết mang đến cho khách hàng những giải pháp trực tuyến hiệu quả và độc đáo. Chúng tôi đồng thời cũng có những video hướng dẫn làm cách làm website miễn phí và có những câu trả lời cho những câu hỏi thường gặp như: Portfolio là gì?</p>
-            </div>
-        </div>
-        <div class="box hidden">
-            <div class="text-container">
-                <h1 class="box-title">Các Kỹ Năng Thành Thạo</h1>
-                <div class="skill-container">
-                    <ion-icon class="skill-logo" name="logo-html5"></ion-icon>
-                    <ion-icon class="skill-logo" name="logo-css3"></ion-icon>
-                    <ion-icon class="skill-logo" name="logo-nodejs"></ion-icon>
-                    <ion-icon class="skill-logo" name="logo-wordpress"></ion-icon>
-                    <ion-icon class="skill-logo" name="logo-vue"></ion-icon>
-                    <ion-icon class="skill-logo" name="logo-laravel"></ion-icon>
-                    <ion-icon class="skill-logo" name="logo-github"></ion-icon>
+    <!-- Hero Section -->
+    <section class="hero" id="homepage">
+        <div class="container">
+            <div class="hero-content gsap-animate">
+                <h1 class="hero-title">Grand Team - Chuyên Thiết Kế Website</h1>
+                <p class="hero-subtitle">Chúng tôi mang đến giải pháp trực tuyến hiệu quả và độc đáo cho doanh nghiệp của bạn</p>
+                
+                <div class="hero-buttons">
+                    <a href="#section-title" class="btn btn-primary">Xem Dịch Vụ</a>
+                    <a href="#section-contact" class="btn btn-secondary">Liên Hệ Ngay</a>
                 </div>
-            </div>   
-            <img class="skill hidden" src="./img/skill.webp" alt="Skills Image">
-        </div>
-        <h1>Dịch vụ làm Website</h1> 
-        <div class="main-content hidden">
-            <div class="content hidden">
-                <a href="webcon.html"><img class="content-image" src="./img/maxresdefault.webp" alt="Portfolio Image"></a>
-                <a class="SP" href="#"><p>Portfolio</p></a>
             </div>
-            <div class="content hidden">
-                <a href="webcon.html"><img class="content-image" src="./img/landing page.webp" alt="Landing Page Image"></a>
-                <a class="SP" href="#"><p>Landing Page</p></a>
-            </div>
-            <div class="content hidden">
-                <a href="webcon.html"><img class="content-image" src="./img/Ecommerce-là-gì-và-loi-ich 1.webp" alt="Web Bán Hàng Image"></a>
-                <a class="SP" href="#"><p>Web bán hàng</p></a>
+            
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="section-title">
+        <div class="container">
+            <h2 class="section-title gsap-animate" >Dịch Vụ Của Chúng Tôi</h2>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card gsap-animate">
+                    <img src="./img/landing page.webp" alt="Landing Page" class="service-img">
+                    <div class="service-content">
+                        <h3 class="service-title">Landing Page</h3>
+                        <p class="service-price">300.000 VNĐ</p>
+                        <ul class="service-features">
+                            <li>Phù hợp cho di động</li>
+                            <li>Thiết kế tùy chỉnh phù hợp</li>
+                            <li>Thời gian tải nhanh</li>
+                            <li>Tối ưu hóa SEO</li>
+                            <li>Khả năng thử nghiệm A/B</li>
+                        </ul>
+                        <a href="webcon.html" class="btn btn-primary">Xem Thêm</a>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card gsap-animate">
+                    <img src="./img/maxresdefault.webp" alt="Portfolio Design" class="service-img">
+                    <div class="service-content">
+                        <h3 class="service-title">Portfolio</h3>
+                        <p class="service-price">600.000 VNĐ</p>
+                        <ul class="service-features">
+                            <li>Giao diện Portfolio Hiện đại</li>
+                            <li>Phương pháp làm Portfolio tối ưu</li>
+                            <li>Hiển thị mượt mà</li>
+                            <li>Tiện ích Liên lạc</li>
+                            <li>Tích hợp Phương tiện Truyền thông</li>
+                        </ul>
+                        <a href="webcon.html" class="btn btn-primary">Xem Thêm</a>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card gsap-animate">
+                    <img src="./img/Ecommerce-là-gì-và-loi-ich 1.webp" alt="Ecommerce Website" class="service-img">
+                    <div class="service-content">
+                        <h3 class="service-title">Web Bán Hàng</h3>
+                        <p class="service-price">1.400.000 VNĐ</p>
+                        <ul class="service-features">
+                            <li>Gian hàng Trực tuyến tiện lợi</li>
+                            <li>Thanh toán An toàn, nhanh nhẹn</li>
+                            <li>Hoạt động tốt trên mọi thiết bị</li>
+                            <li>Giao diện thân thiện người dùng</li>
+                            <li>Thiết kế web bán hàng độc đáo</li>
+                        </ul>
+                        <a href="webcon.html" class="btn btn-primary">Xem Thêm</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="main-btn hidden">
-            <a href="webcon.html"><button class="buy-btn">Thuê dịch vụ</button></a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="section-about-us">
+        <div class="container">
+            <h2 class="section-title gsap-animate">Về Chúng Tôi</h2>
+            
+            <div class="about-grid">
+                <div class="about-img-container gsap-animate">
+                    <img src="./img/depositphotos_104648666-stock-photo-group-of-people-brainstorming-on 1.webp" alt="About Us" class="about-img">
+                </div>
+                
+                <div class="about-content gsap-animate">
+                    <h3>Grand Team - Chuyên Thiết Kế Website</h3>
+                    <p>Chúng tôi là một nhóm chuyên về việc phát triển và làm website chuyên nghiệp tại Hà Nội. Với sự đam mê và kiến thức sâu rộng về công nghệ web, chúng tôi cam kết mang đến cho khách hàng những giải pháp trực tuyến hiệu quả và độc đáo.</p>
+                    <p>Chúng tôi đồng thời cũng có những video hướng dẫn làm cách làm website miễn phí và có những câu trả lời cho những câu hỏi thường gặp như: Portfolio là gì?</p>
+                    
+                    <h4 style="margin-top: 30px; margin-bottom: 20px;">Kỹ Năng Của Chúng Tôi</h4>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <ion-icon name="logo-html5"></ion-icon>
+                            </div>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <ion-icon name="logo-css3"></ion-icon>
+                            </div>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <ion-icon name="logo-javascript"></ion-icon>
+                            </div>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <ion-icon name="logo-wordpress"></ion-icon>
+                            </div>
+                            <span>WordPress</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <ion-icon name="logo-vue"></ion-icon>
+                            </div>
+                            <span>Vue.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <ion-icon name="logo-nodejs"></ion-icon>
+                            </div>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
+   
+    <!-- Contact Section -->
+   <!-- Contact Section -->
+    <section class="section contact" id="section-contact">
+        <div class="container">
+            <h2 class="section-title gsap-animate">Liên Hệ Với Chúng Tôi</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info gsap-animate">
+                    <h3>Thông Tin Liên Hệ</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>nguyenphamducanh366@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </div>
+                        <div>
+                            <h4>Điện thoại</h4>
+                            <p>0332417843</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div>
+                            <h4>Địa chỉ</h4>
+                            <p>Hà Nội, Việt Nam</p>
+                        </div>
+                    </div>
+                    
+                   <div class="social-links">
+                        <a href="https://www.facebook.com/nguyen.pham.duc.anh.2024" target="blank" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a href="https://github.com/nguyenphamducanh366" target="blank" class="social-link">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                        <a href="https://www.linkedin.com/in/duc-anh-nguyen-pham-b33b3b366/" target="blank" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form gsap-animate">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label">Họ và tên</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Số điện thoại</label>
+                            <input type="tel" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Nội dung</label>
+                            <textarea class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Gửi Thông Tin</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <div class="footer-container hidden">
-            <div class="footer-item">
-                <a href="#"><img class="web-logo" src="./img/logo.webp" alt="Grand Team Logo"></a>
-            </div>
-            <div class="footer-item">
-                <p>&copy; Copyright by Team 6 FPL MKT</p>
-            </div>
-            <div class="footer-item">
-                <b><h4>Email: window1996vn@gmail.com</h4></b>
-                <b><h5>0982345261</h5></b>
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2025 Grand Team. All right reserve.</p>
             </div>
         </div>
     </footer>
 
-    <script
-    type="module"
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-  ></script>
-  <script
-    nomodule
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-  ></script>
-  <script>
-    const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    } 
-  });
-});
-const hiddenElement = document.querySelectorAll(".hidden");
-hiddenElement.forEach((el) => observer.observe(el));
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking on a nav link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
 
-  </script>
+
+        // Initialize GSAP animations
+        gsap.registerPlugin(ScrollTrigger);
+        
+        // Animate elements on scroll
+        gsap.utils.toArray('.gsap-animate').forEach(element => {
+            gsap.fromTo(element, {
+                opacity: 0,
+                y: 50
+            }, {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                scrollTrigger: {
+                    trigger: element,
+                    start: 'top 80%',
+                    toggleActions: 'play none none none'
+                }
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                document.querySelector('header').style.padding = '10px 0';
+                document.querySelector('header').style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
+            } else {
+                document.querySelector('header').style.padding = '20px 0';
+                document.querySelector('header').style.boxShadow = 'none';
+            }
+        });
+        
+        // Service card hover animations
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                gsap.to(card, {
+                    y: -10,
+                    duration: 0.3,
+                    ease: 'power2.out'
+                });
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                gsap.to(card, {
+                    y: 0,
+                    duration: 0.3,
+                    ease: 'power2.out'
+                });
+            });
+        });
+        
+        // Skill icon animations
+        document.querySelectorAll('.skill-item').forEach(skill => {
+            skill.addEventListener('mouseenter', () => {
+                gsap.to(skill.querySelector('.skill-icon'), {
+                    scale: 1.1,
+                    duration: 0.3,
+                    ease: 'power2.out'
+                });
+            });
+            
+            skill.addEventListener('mouseleave', () => {
+                gsap.to(skill.querySelector('.skill-icon'), {
+                    scale: 1,
+                    duration: 0.3,
+                    ease: 'power2.out'
+                });
+            });
+        });
+        
+        // Form input animations
+        document.querySelectorAll('.form-control').forEach(input => {
+            input.addEventListener('focus', () => {
+                gsap.to(input, {
+                    boxShadow: '0 0 0 3px rgba(222, 97, 97, 0.3)',
+                    duration: 0.3
+                });
+            });
+            
+            input.addEventListener('blur', () => {
+                gsap.to(input, {
+                    boxShadow: 'none',
+                    duration: 0.3
+                });
+            });
+        });
+    </script>
 </body>
 </html>
-
